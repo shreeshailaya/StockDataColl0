@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welocme to DataColl</title>
+</head>
+<body>
+{% block content %}
+{% if api %}
+    {% for key, value in api.items %}
+        {{ key }}:{{ value }}<br><br>
+    {% endfor %}
+{% endif %}
+
+<h1>This is index page</h1>
+
+{% endblock %}
+</body>
+</html>
